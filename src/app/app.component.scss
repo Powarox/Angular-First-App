@@ -1,5 +1,26 @@
-nav {
-    a {
-        margin: 0 10px;
+header {
+    padding: 20px;
+    background: #499F68;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        font-size: 18px;
     }
+    nav {
+        a {
+            margin: 0 10px;
+            padding: 10px;
+            border-radius: 10px;
+            color: #333;
+            font-weight: bold;
+            transition: 0.4s;
+            &:hover {
+                background: #FFF;
+            }
+        }
+    }
+}
+
+main {
+    padding: 30px;
 }
