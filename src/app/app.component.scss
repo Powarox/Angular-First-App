@@ -1,6 +1,6 @@
 header {
     padding: 20px;
-    background: #499F68;
+    background: var(--main-first-color);
     display: flex;
     justify-content: space-between;
     h1 {
@@ -11,11 +11,12 @@ header {
             margin: 0 10px;
             padding: 10px;
             border-radius: 10px;
-            color: #333;
+            color: var(--main-second-color);
             font-weight: bold;
             transition: 0.4s;
             &:hover {
-                background: #FFF;
+                color: var(--main-first-color);
+                background: var(--main-second-color);
             }
         }
     }
