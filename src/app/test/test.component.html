@@ -1,1 +1,19 @@
 <p>test works!</p>
+
+<form  #f="ngForm" (ngSubmit)="onSubmit(f)">
+    <label for="technoName">Nom Techno :</label>
+    <input type="text" id="technoName" ngModel name="technoName">
+
+    <label for="category">Category</label>
+    <select id="category" ngModel name="category">
+        <option value="" disabled>----</option>
+        <option value="front">Front-end</option>
+        <option value="back">Back-end</option>
+        <option value="full">Full-Stack</option>
+    </select>
+
+    <label for="details">Détails</label>
+    <textarea id="details" cols="30" rows="10" ngModel name="details"></textarea>
+    
+    <button type="submit">Ajouter</button>
+</form>
