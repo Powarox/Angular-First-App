@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { TechnoService } from '../services/techno.service';
 
 @Component({
     selector: 'app-test',
@@ -8,13 +9,13 @@ import { NgForm } from '@angular/forms';
 })
 
 export class TestComponent implements OnInit {
-    constructor() { }
+    constructor(private ts: TechnoService) { }
 
     ngOnInit(): void {
     
     }
 
     onSubmit(form: NgForm) {
-        console.log(form.value);
+        this.ts.createTechno(form.value)
     }
 }
