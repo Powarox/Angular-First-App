@@ -4,8 +4,8 @@ import { TechnoService } from '../services/techno.service';
 
 @Component({
     selector: 'app-techno-add',
-    templateUrl: './test.component.html',
-    styleUrls: ['./test.component.scss']
+    templateUrl: './techno-add.component.html',
+    styleUrls: ['./techno-add.component.scss']
 })
 
 export class TestComponent implements OnInit {

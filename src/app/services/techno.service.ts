@@ -24,17 +24,7 @@ export class TechnoService {
 
     createTechno(techno: any[]){
         const newTechno = { id: Date.now(), ...techno}
-        
         this.technos = [...this.technos, newTechno];
-        // this.technos = merge(newTechno, this.technos);
-        // this.technos = techno;
-
-        // this.technos.push(...techno);
-        // this.technos = [...this.technos, ...techno];
-        
-        console.log(techno);
-        console.log(newTechno);
-        console.log(this.technos);
     }
 
     getTechnos() {

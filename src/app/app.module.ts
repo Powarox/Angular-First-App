@@ -5,9 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { TestComponent } from './techno-add/test.component';
-import { ListComponent } from './techno-list/list.component';
-import { CardComponent } from './techno-card/card.component';
+import { TestComponent } from './techno-add/techno-add.component';
+import { ListComponent } from './techno-list/techno-list.component';
+import { CardComponent } from './techno-card/techno-card.component';
 
 @NgModule({
     declarations: [

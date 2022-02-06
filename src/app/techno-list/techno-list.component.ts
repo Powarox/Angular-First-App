@@ -3,8 +3,8 @@ import { TechnoService } from '../services/techno.service';
 
 @Component({
     selector: 'app-techno-list',
-    templateUrl: './list.component.html',
-    styleUrls: ['./list.component.scss']
+    templateUrl: './techno-list.component.html',
+    styleUrls: ['./techno-list.component.scss']
 })
 export class ListComponent implements OnInit {
     allTechnos: any[] = [];
