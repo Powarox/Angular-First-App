@@ -5,15 +5,17 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { TestComponent } from './test/test.component';
-import { ListComponent } from './list/list.component';
+import { TestComponent } from './techno-add/test.component';
+import { ListComponent } from './techno-list/list.component';
+import { CardComponent } from './techno-card/card.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         HomeComponent,
         TestComponent,
-        ListComponent
+        ListComponent,
+        CardComponent
     ],
     imports: [
         BrowserModule,
