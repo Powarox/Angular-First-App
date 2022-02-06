@@ -3,6 +3,5 @@
 {{ allTechnos | json }}
 
 <div *ngFor="let items in allTechnos">
-    <h4>{{ items.technoName }}</h4>
-    <p>{{ items.details }}</p>
+    <app-techno-card></app-techno-card>
 </div>

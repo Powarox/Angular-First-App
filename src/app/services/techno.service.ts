@@ -5,14 +5,27 @@ import { Injectable } from '@angular/core';
 })
 
 export class TechnoService {
-    private technos: {} = {};
+    private technos: any[] = [
+         { 
+            'id': Date.now(),
+            'technoName': 'Vuejs',
+            'category': 'front',
+            'details:': 'Techno front end pour dataviz'
+        },
+        { 
+            'id': Date.now(),
+            'technoName': 'React',
+            'category': 'front',
+            'details:': 'Techno front end pour dataviz'
+        }
+    ]
     
     constructor() { }
 
-    createTechno(techno: {}){
+    createTechno(techno: any[]){
         const newTechno = { id: Date.now(), ...techno}
         
-        this.technos = {...newTechno, ...this.technos};
+        this.technos = [...this.technos, newTechno];
         // this.technos = merge(newTechno, this.technos);
         // this.technos = techno;
 

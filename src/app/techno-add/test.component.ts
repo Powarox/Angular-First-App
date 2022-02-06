@@ -3,7 +3,7 @@ import { NgForm } from '@angular/forms';
 import { TechnoService } from '../services/techno.service';
 
 @Component({
-    selector: 'app-test',
+    selector: 'app-techno-add',
     templateUrl: './test.component.html',
     styleUrls: ['./test.component.scss']
 })
