@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Technology } from '../models/technology';
 
 @Injectable({
     providedIn: 'root'
@@ -22,12 +23,16 @@ export class TechnoService {
     
     constructor() { }
 
+    getTechnos() {
+        return this.technos;
+    }
+
     createTechno(techno: any[]){
-        const newTechno = { id: Date.now(), ...techno}
+        const newTechno = { id: Date.now(), ...techno};
         this.technos = [...this.technos, newTechno];
     }
 
-    getTechnos() {
-        return this.technos;
+    deleteTechno(techno: any[]) {
+        // this.technos = this.technos.filter(t => t.id !== techno.id);
     }
 }

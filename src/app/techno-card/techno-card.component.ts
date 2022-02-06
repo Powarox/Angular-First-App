@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
     selector: 'app-techno-card',
@@ -6,7 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
     styleUrls: ['./techno-card.component.scss']
 })
 export class CardComponent implements OnInit {
-    @Input() tech: {} = {};
+    @Input() tech: any[] = [];
+    @Output() deleteTech = new EventEmitter();
         
     constructor() { }
 
@@ -14,4 +15,7 @@ export class CardComponent implements OnInit {
         console.log(this.tech);
     }
 
+    delete(tech: any[]) {
+        this.deleteTech.emit(tech);
+    }
 }

@@ -6,6 +6,7 @@ import { TechnoService } from '../services/techno.service';
     templateUrl: './techno-list.component.html',
     styleUrls: ['./techno-list.component.scss']
 })
+
 export class ListComponent implements OnInit {
     allTechnos: any[] = [];
 
@@ -19,4 +20,8 @@ export class ListComponent implements OnInit {
         this.allTechnos = this.ts.getTechnos();
     }
 
+    deleteTechno(techno: any[]) {
+        this.ts.deleteTechno(techno);
+        this.allTechnos = this.ts.getTechnos();
+    }
 }
